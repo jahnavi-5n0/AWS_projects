@@ -1,0 +1,88 @@
+PROJECT 1 - Shell Scripting:
+Creating a shell script containing a sequence of Linux commands and execute it.
+
+What is shell scripting?
+
+A shell script is a text file that contains a sequence of commands for a UNIX-based operating system. It is called a shell script because it combines a sequence of commands, that would otherwise have to be typed into the keyboard one at a time, into a single script
+
+-----------------------------------------------------
+Linux vi editor
+-----------------------------------------------------
+vi-editor will be opened without any filename
+vi filename-editor will be opened with given filename
+command mode-pressing ESC
+insert mode-pressing i/I
+
+i-moving cursor towards left
+h-moving cursor towards right
+k-moving cursor up
+j-moving cursor down
+
+To insert
+i-insert
+a-insertion begin after cursor
+A-insertion begin at end of line
+o-inserts new line after the cursor
+O-inserts new line above cursor
+
+copy and paste
+yy-copies the current line
+p-paste the copied line
+
+To save
+go to command mode by pressing ESC
+:w-to save the file content
+:w filename to save content with filename
+:q-quit the file
+:q!-quit the file without saving
+:wq-save and quit the file
+-----------------------------------------------------
+Basic commands in shell scripting
+-----------------------------------------------------
+mkdir           -create new directory with given name
+ls              -list the content of directory
+cd              -change the directory
+touch           -used to create empty files
+cat>filename    -to create a new file and write the content  #until we press ctrl+d it asks to enter the data to save
+cat             -display the content of the file
+pwd             -craetes a new file and content of both files will be copied to new file
+		         current working directory
+ls *.txt        -shows all the files with given extension (ex:ls *.c)
+cp              -copy a file or directory
+mv              -moves a file or directory
+head            -display first 10 lines in a file
+tail            -displays last 10 lines in a file
+tac             -it is the reverse order of cat
+		         file content in the reverse order
+more            -similar to cat command
+		         we can display large content by using ENTER,SPACEBAR
+id              -display the id of user/group
+clear           -clear the screen
+vi              -text editor to write programs of text
+grep            -filter to search given pattern in the file content
+diff            -compares the content of two different files
+ping            -check the connectivity status of server  #to stop use ctrl+j
+history         -reviews all the commands that are given
+hostname        -displays the hostname
+hostname-i      -display ip address of the user
+chmod           -change the user/group permissions to access file
+nl              -display the line numbers
+wc              -given no of lines,words and characters available in the file content
+uniq            -remove duplicate of file contents/it can remove only continous duplicates
+rmdir           -removes the specified directory(the directory should be empty)
+rm              -remove file
+-----------------------------------------------------
+   GREP commands(global regular expression print)
+	grep(options)patterns(file)
+	cat filename | grep pattern
+-----------------------------------------------------
+c               -grep-c pattern file - display number of matching files
+h               -grep-h pattern file - display all the matching lines
+l               -grep-l pattern * - display all the file names in which pattern matches
+n               -grep-n pattern file - display all the matching lines with the line number
+v               -grep-v pattern file - display all the nonmatching lines
+o               -grep-o pattern file - display all the matching pattern
+e               -grep-e pattern file - use multiple search patterns
+^               -grep-^ pattern file - match the lines which starts with given pattern
+$               -grep-$ pattern file - display the lines which ends with given pattern
+i               -grep-i pattern file - case sensitive searching

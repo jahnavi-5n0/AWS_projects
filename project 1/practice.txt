@@ -1,0 +1,559 @@
+jahnavi@DESKTOP-72D1M2J:~$ vi
+jahnavi@DESKTOP-72D1M2J:~$ gcc first.txt
+Command 'gcc' not found, but can be installed with:
+sudo apt install gcc
+jahnavi@DESKTOP-72D1M2J:~$ mkdir LINUX_commands
+jahnavi@DESKTOP-72D1M2J:~$ ls
+LINUX_commands  first.txt
+jahnavi@DESKTOP-72D1M2J:~$ cd LINUX_commands
+jahnavi@DESKTOP-72D1M2J:~/LINUX_commands$ ls
+jahnavi@DESKTOP-72D1M2J:~/LINUX_commands$ touch file1.txt
+jahnavi@DESKTOP-72D1M2J:~/LINUX_commands$ ls
+file1.txt
+jahnavi@DESKTOP-72D1M2J:~/LINUX_commands$ cat>file2.txt
+hello friends! I am learning shell scripting
+jahnavi@DESKTOP-72D1M2J:~/LINUX_commands$ ls
+file1.txt  file2.txt
+jahnavi@DESKTOP-72D1M2J:~/LINUX_commands$ cat file2.txt
+hello friends! I am learning shell scripting
+jahnavi@DESKTOP-72D1M2J:~/LINUX_commands$ cat>file3.txt
+welcome again!
+jahnavi@DESKTOP-72D1M2J:~/LINUX_commands$ ls
+file1.txt  file2.txt  file3.txt
+jahnavi@DESKTOP-72D1M2J:~/LINUX_commands$ cat file3.txt
+welcome again!
+jahnavi@DESKTOP-72D1M2J:~/LINUX_commands$ cat file2.txt file3.txt>filemerge.txt
+jahnavi@DESKTOP-72D1M2J:~/LINUX_commands$ ls
+file1.txt  file2.txt  file3.txt  filemerge.txt
+jahnavi@DESKTOP-72D1M2J:~/LINUX_commands$ cat filemerge.txt
+hello friends! I am learning shell scripting
+welcome again!
+jahnavi@DESKTOP-72D1M2J:~/LINUX_commands$ ls *.txt
+file1.txt  file2.txt  file3.txt  filemerge.txt
+jahnavi@DESKTOP-72D1M2J:~/LINUX_commands$ cd
+jahnavi@DESKTOP-72D1M2J:~$ pwd
+/home/jahnavi
+jahnavi@DESKTOP-72D1M2J:~$ cp file3.txt file4.txt
+cp: cannot stat 'file3.txt': No such file or directory
+jahnavi@DESKTOP-72D1M2J:~$ ls
+LINUX_commands  first.txt
+jahnavi@DESKTOP-72D1M2J:~$ cp file2.txt file4.txt
+cp: cannot stat 'file2.txt': No such file or directory
+jahnavi@DESKTOP-72D1M2J:~$ ls
+LINUX_commands  first.txt
+jahnavi@DESKTOP-72D1M2J:~$ pwd
+/home/jahnavi
+jahnavi@DESKTOP-72D1M2J:~$ cp file2.txt file4.txt
+cp: cannot stat 'file2.txt': No such file or directory
+jahnavi@DESKTOP-72D1M2J:~$ cat file3.txt
+cat: file3.txt: No such file or directory
+jahnavi@DESKTOP-72D1M2J:~$ cd
+jahnavi@DESKTOP-72D1M2J:~$ cat file3.txt
+cat: file3.txt: No such file or directory
+jahnavi@DESKTOP-72D1M2J:~$ pwd
+/home/jahnavi
+jahnavi@DESKTOP-72D1M2J:~$ mkdir LINUX_commands
+mkdir: cannot create directory ‘LINUX_commands’: File exists
+jahnavi@DESKTOP-72D1M2J:~$ mkdir LINUX_commands1
+jahnavi@DESKTOP-72D1M2J:~$ cat file1.txt
+cat: file1.txt: No such file or directory
+jahnavi@DESKTOP-72D1M2J:~$ cat>file1.txt
+jahnavi is learning shell scripting
+jahnavi@DESKTOP-72D1M2J:~$ cat>file2.txt
+welcome
+jahnavi@DESKTOP-72D1M2J:~$ cat file1.txt file2.txt>filemerge.txt
+jahnavi@DESKTOP-72D1M2J:~$ cat filemerge.txt
+jahnavi is learning shell scripting
+welcome
+jahnavi@DESKTOP-72D1M2J:~$ ls
+LINUX_commands  LINUX_commands1  file1.txt  file2.txt  filemerge.txt  first.txt
+jahnavi@DESKTOP-72D1M2J:~$ mv file3.txt/home/jahnavi/LINUX_commands
+mv: missing destination file operand after 'file3.txt/home/jahnavi/LINUX_commands'
+Try 'mv --help' for more information.
+jahnavi@DESKTOP-72D1M2J:~$ mv file3.txt/home/jahnavi/LINUX_commands1
+mv: missing destination file operand after 'file3.txt/home/jahnavi/LINUX_commands1'
+Try 'mv --help' for more information.
+jahnavi@DESKTOP-72D1M2J:~$ mv file3.txt /home/jahnavi/LINUX_commands1
+mv: cannot stat 'file3.txt': No such file or directory
+jahnavi@DESKTOP-72D1M2J:~$ mv file2.txt /home/jahnavi/LINUX_commands1
+jahnavi@DESKTOP-72D1M2J:~$ cd LINUX_commands
+jahnavi@DESKTOP-72D1M2J:~/LINUX_commands$ ls
+file1.txt  file2.txt  file3.txt  filemerge.txt
+jahnavi@DESKTOP-72D1M2J:~/LINUX_commands$ cat file1.txt
+jahnavi@DESKTOP-72D1M2J:~/LINUX_commands$ vi file1.txt
+jahnavi@DESKTOP-72D1M2J:~/LINUX_commands$ cat file1.txt
+hiii there i am jahnavi
+line 1
+line 2
+line 3
+line 4
+line 5
+line 6
+line 7
+line 8
+line 9
+line 10
+jahnavi@DESKTOP-72D1M2J:~/LINUX_commands$ vi file1.txt
+jahnavi@DESKTOP-72D1M2J:~/LINUX_commands$ cat file1.txt
+hiii there i am jahnavi
+line 1
+line 2
+line 3
+line 4
+line 5
+line 6
+line 7
+line 8
+line 9
+line 10
+line 11
+line 12
+line 13
+line 14
+line 15
+
+jahnavi@DESKTOP-72D1M2J:~/LINUX_commands$ head file1.txt
+hiii there i am jahnavi
+line 1
+line 2
+line 3
+line 4
+line 5
+line 6
+line 7
+line 8
+line 9
+jahnavi@DESKTOP-72D1M2J:~/LINUX_commands$ tail file1.txt
+line 7
+line 8
+line 9
+line 10
+line 11
+line 12
+line 13
+line 14
+line 15
+
+jahnavi@DESKTOP-72D1M2J:~/LINUX_commands$ tac file1.txt
+
+line 15
+line 14
+line 13
+line 12
+line 11
+line 10
+line 9
+line 8
+line 7
+line 6
+line 5
+line 4
+line 3
+line 2
+line 1
+hiii there i am jahnavi
+jahnavi@DESKTOP-72D1M2J:~/LINUX_commands$ cat filemerge.txt
+hello friends! I am learning shell scripting
+welcome again!
+jahnavi@DESKTOP-72D1M2J:~/LINUX_commands$ tac filemerge.txt
+welcome again!
+hello friends! I am learning shell scripting
+jahnavi@DESKTOP-72D1M2J:~/LINUX_commands$ cat file1.txt
+hiii there i am jahnavi
+line 1
+line 2
+line 3
+line 4
+line 5
+line 6
+line 7
+line 8
+line 9
+line 10
+line 11
+line 12
+line 13
+line 14
+line 15
+
+jahnavi@DESKTOP-72D1M2J:~/LINUX_commands$ more file1.txt
+hiii there i am jahnavi
+line 1
+line 2
+line 3
+line 4
+line 5
+line 6
+line 7
+line 8
+line 9
+line 10
+line 11
+line 12
+line 13
+line 14
+line 15
+
+jahnavi@DESKTOP-72D1M2J:~/LINUX_commands$ id
+uid=1000(jahnavi) gid=1000(jahnavi) groups=1000(jahnavi),4(adm),20(dialout),24(cdrom),25(floppy),27(sudo),29(audio),30(dip),44(video),46(plugdev),116(netdev)
+jahnavi@DESKTOP-72D1M2J:~/LINUX_commands$ grep linux file1.txt
+jahnavi@DESKTOP-72D1M2J:~/LINUX_commands$ grep a merge.txt
+grep: merge.txt: No such file or directory
+jahnavi@DESKTOP-72D1M2J:~/LINUX_commands$ grep a filemerge.txt
+hello friends! I am learning shell scripting
+welcome again!
+jahnavi@DESKTOP-72D1M2J:~/LINUX_commands$ cat file1.txt
+hiii there i am jahnavi
+line 1
+line 2
+line 3
+line 4
+line 5
+line 6
+line 7
+line 8
+line 9
+line 10
+line 11
+line 12
+line 13
+line 14
+line 15
+
+jahnavi@DESKTOP-72D1M2J:~/LINUX_commands$ cat filemerge.txt
+hello friends! I am learning shell scripting
+welcome again!
+jahnavi@DESKTOP-72D1M2J:~/LINUX_commands$ diff file1.txt filemerge.txt
+1,17c1,2
+< hiii there i am jahnavi
+< line 1
+< line 2
+< line 3
+< line 4
+< line 5
+< line 6
+< line 7
+< line 8
+< line 9
+< line 10
+< line 11
+< line 12
+< line 13
+< line 14
+< line 15
+<
+---
+> hello friends! I am learning shell scripting
+> welcome again!
+jahnavi@DESKTOP-72D1M2J:~/LINUX_commands$ ping google.com
+PING google.com (142.250.183.14) 56(84) bytes of data.
+64 bytes from bom07s30-in-f14.1e100.net (142.250.183.14): icmp_seq=1 ttl=111 time=58.7 ms
+64 bytes from bom07s30-in-f14.1e100.net (142.250.183.14): icmp_seq=3 ttl=111 time=39.8 ms
+64 bytes from bom07s30-in-f14.1e100.net (142.250.183.14): icmp_seq=4 ttl=111 time=44.9 ms
+64 bytes from bom07s30-in-f14.1e100.net (142.250.183.14): icmp_seq=5 ttl=111 time=76.5 ms
+64 bytes from bom07s30-in-f14.1e100.net (142.250.183.14): icmp_seq=7 ttl=111 time=83.0 ms
+64 bytes from bom07s30-in-f14.1e100.net (142.250.183.14): icmp_seq=8 ttl=111 time=38.0 ms
+64 bytes from bom07s30-in-f14.1e100.net (142.250.183.14): icmp_seq=9 ttl=111 time=37.0 ms
+64 bytes from bom07s30-in-f14.1e100.net (142.250.183.14): icmp_seq=10 ttl=111 time=46.0 ms
+64 bytes from bom07s30-in-f14.1e100.net (142.250.183.14): icmp_seq=11 ttl=111 time=58.7 ms
+64 bytes from bom07s30-in-f14.1e100.net (142.250.183.14): icmp_seq=12 ttl=111 time=122 ms
+64 bytes from bom07s30-in-f14.1e100.net (142.250.183.14): icmp_seq=13 ttl=111 time=182 ms
+64 bytes from bom07s30-in-f14.1e100.net (142.250.183.14): icmp_seq=14 ttl=111 time=68.1 ms
+64 bytes from bom07s30-in-f14.1e100.net (142.250.183.14): icmp_seq=15 ttl=111 time=35.7 ms
+From 192.168.29.209 icmp_seq=216 Destination Host Unreachable
+jahnavi@DESKTOP-72D1M2J:~/LINUX_commands$ history
+    1  vi
+    2  j
+    3  vi
+    4  gcc first.txt
+    5  mkdir LINUX_commands
+    6  ls
+    7  cd LINUX_commands
+    8  ls
+    9  touch file1.txt
+   10  ls
+   11  cat>file2.txt
+   12  ls
+   13  cat file2.txt
+   14  cat>file3.txt
+   15  ls
+   16  cat file3.txt
+   17  cat file2.txt file3.txt>filemerge.txt
+   18  ls
+   19  cat filemerge.txt
+   20  ls *.txt
+   21  cd
+   22  pwd
+   23  cp file3.txt file4.txt
+   24  ls
+   25  cp file2.txt file4.txt
+   26  ls
+   27  pwd
+   28  cp file2.txt file4.txt
+   29  cat file3.txt
+   30  cd
+   31  cat file3.txt
+   32  pwd
+   33  mkdir LINUX_commands
+   34  mkdir LINUX_commands1
+   35  cat file1.txt
+   36  cat>file1.txt
+   37  cat>file2.txt
+   38  cat file1.txt file2.txt>filemerge.txt
+   39  cat filemerge.txt
+   40  ls
+   41  mv file3.txt/home/jahnavi/LINUX_commands
+   42  mv file3.txt/home/jahnavi/LINUX_commands1
+   43  mv file3.txt /home/jahnavi/LINUX_commands1
+   44  mv file2.txt /home/jahnavi/LINUX_commands1
+   45  cd LINUX_commands
+   46  ls
+   47  cat file1.txt
+   48  vi file1.txt
+   49  cat file1.txt
+   50  vi file1.txt
+   51  cat file1.txt
+   52  head file1.txt
+   53  tail file1.txt
+   54  tac file1.txt
+   55  cat filemerge.txt
+   56  tac filemerge.txt
+   57  cat file1.txt
+   58  more file1.txt
+   59  id
+   60  grep linux file1.txt
+   61  grep a merge.txt
+   62  grep a filemerge.txt
+   63  cat file1.txt
+   64  cat filemerge.txt
+   65  diff file1.txt filemerge.txt
+   66  ping google.com
+   67  clear
+   68  history
+jahnavi@DESKTOP-72D1M2J:~/LINUX_commands$ hostname
+DESKTOP-72D1M2J
+jahnavi@DESKTOP-72D1M2J:~/LINUX_commands$ hostname -i
+127.0.1.1
+jahnavi@DESKTOP-72D1M2J:~/LINUX_commands$ cat filemerge.txt
+hello friends! I am learning shell scripting
+welcome again!
+jahnavi@DESKTOP-72D1M2J:~/LINUX_commands$ vi filemerge.txt
+jahnavi@DESKTOP-72D1M2J:~/LINUX_commands$ cat filemerge.txt
+
+hello friends! I am learning shell scripting
+welcome again!
+in to the linux
+
+jahnavi@DESKTOP-72D1M2J:~/LINUX_commands$ chmod u=r filemerge.txt
+jahnavi@DESKTOP-72D1M2J:~/LINUX_commands$ vi filemerge.txt
+jahnavi@DESKTOP-72D1M2J:~/LINUX_commands$ chmod u=w filemerge.txt
+jahnavi@DESKTOP-72D1M2J:~/LINUX_commands$ vi filemerge.txt
+jahnavi@DESKTOP-72D1M2J:~/LINUX_commands$ ls
+file1.txt  file2.txt  file3.txt  filemerge.txt
+jahnavi@DESKTOP-72D1M2J:~/LINUX_commands$ cat file1.txt
+hiii there i am jahnavi
+line 1
+line 2
+line 3
+line 4
+line 5
+line 6
+line 7
+line 8
+line 9
+line 10
+line 11
+line 12
+line 13
+line 14
+line 15
+
+jahnavi@DESKTOP-72D1M2J:~/LINUX_commands$ cat file2.txt
+hello friends! I am learning shell scripting
+jahnavi@DESKTOP-72D1M2J:~/LINUX_commands$ nl file2.txt
+     1  hello friends! I am learning shell scripting
+jahnavi@DESKTOP-72D1M2J:~/LINUX_commands$ nl file1.txt
+     1  hiii there i am jahnavi
+     2  line 1
+     3  line 2
+     4  line 3
+     5  line 4
+     6  line 5
+     7  line 6
+     8  line 7
+     9  line 8
+    10  line 9
+    11  line 10
+    12  line 11
+    13  line 12
+    14  line 13
+    15  line 14
+    16  line 15
+
+jahnavi@DESKTOP-72D1M2J:~/LINUX_commands$ wc file2.txt
+ 1  7 45 file2.txt
+jahnavi@DESKTOP-72D1M2J:~/LINUX_commands$ wc file1.txt
+ 17  35 139 file1.txt
+jahnavi@DESKTOP-72D1M2J:~/LINUX_commands$ vi filemerge.txt
+jahnavi@DESKTOP-72D1M2J:~/LINUX_commands$ vi file1.txt
+jahnavi@DESKTOP-72D1M2J:~/LINUX_commands$ cat file1.txt
+hiii there i am jahnavi
+line 1
+line 2
+line 3
+line 4
+line 5
+line 6
+line 7
+line 8
+line 9
+line 10
+line 11
+line 12
+line 13
+line 14
+line 15
+thank uuuu
+soo much
+jahnavi@DESKTOP-72D1M2J:~/LINUX_commands$ vi file1.txt
+jahnavi@DESKTOP-72D1M2J:~/LINUX_commands$ cat file1.txt
+hiii there i am jahnavi
+line 1
+line 2
+line 3
+line 4
+line 5
+line 6
+line 7
+line 8
+line 9
+line 10
+line 11
+line 12
+line 13
+line 14
+line 15
+thank uuuu
+soo much
+soo much
+jahnavi@DESKTOP-72D1M2J:~/LINUX_commands$ uniq file1.txt
+hiii there i am jahnavi
+line 1
+line 2
+line 3
+line 4
+line 5
+line 6
+line 7
+line 8
+line 9
+line 10
+line 11
+line 12
+line 13
+line 14
+line 15
+thank uuuu
+soo much
+jahnavi@DESKTOP-72D1M2J:~/LINUX_commands$ cd
+jahnavi@DESKTOP-72D1M2J:~$ ls
+LINUX_commands  LINUX_commands1  file1.txt  filemerge.txt  first.txt
+jahnavi@DESKTOP-72D1M2J:~$ ls LINUX_commands1
+file2.txt
+jahnavi@DESKTOP-72D1M2J:~$ rmdir LINUX_commands1
+rmdir: failed to remove 'LINUX_commands1': Directory not empty
+jahnavi@DESKTOP-72D1M2J:~$ cd
+jahnavi@DESKTOP-72D1M2J:~$ ls LINUX_commands1
+file2.txt
+jahnavi@DESKTOP-72D1M2J:~$ rm LINUX_commands1
+rm: cannot remove 'LINUX_commands1': Is a directory
+jahnavi@DESKTOP-72D1M2J:~$ ls
+LINUX_commands  LINUX_commands1  file1.txt  filemerge.txt  first.txt
+jahnavi@DESKTOP-72D1M2J:~$ rm first.txt
+jahnavi@DESKTOP-72D1M2J:~$ ls
+LINUX_commands  LINUX_commands1  file1.txt  filemerge.txt
+jahnavi@DESKTOP-72D1M2J:~$clear
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+Welcome to Ubuntu 22.04.2 LTS (GNU/Linux 5.15.90.1-microsoft-standard-WSL2 x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+
+This message is shown once a day. To disable it please create the
+/home/jahnavi/.hushlogin file.
+jahnavi@DESKTOP-72D1M2J:~$ history
+    1  vi
+    2  history
+jahnavi@DESKTOP-72D1M2J:~$ cat>grepfilter.txt
+Hello! friends
+welcome to LINUX /UNIX commands
+grep filter is used to search pattern in files.
+jahnavi@DESKTOP-72D1M2J:~$ cat grepfilter.txt
+Hello! friends
+welcome to LINUX /UNIX commands
+grep filter is used to search pattern in files.
+jahnavi@DESKTOP-72D1M2J:~$ grep "UNIX" grepfilter.txt
+welcome to LINUX /UNIX commands
+jahnavi@DESKTOP-72D1M2J:~$ cat grepfilter.txt | grep "LINUX"
+welcome to LINUX /UNIX commands
+jahnavi@DESKTOP-72D1M2J:~$ grep -c "UNIX" grepfilter.txt
+1
+jahnavi@DESKTOP-72D1M2J:~$ grep -c "o" grepfilter.txt
+3
+jahnavi@DESKTOP-72D1M2J:~$ grep -h "o" grepfilter.txt
+Hello! friends
+welcome to LINUX /UNIX commands
+grep filter is used to search pattern in files.
+jahnavi@DESKTOP-72D1M2J:~$ grep -l "o" *
+grep: LINUX_commands: Is a directory
+grep: LINUX_commands1: Is a directory
+filemerge.txt
+grepfilter.txt
+jahnavi@DESKTOP-72D1M2J:~$ ls
+LINUX_commands  LINUX_commands1  file1.txt  filemerge.txt  grepfilter.txt
+jahnavi@DESKTOP-72D1M2J:~$ grep -l "UNIX" *
+grep: LINUX_commands: Is a directory
+grep: LINUX_commands1: Is a directory
+grepfilter.txt
+jahnavi@DESKTOP-72D1M2J:~$ grep -n "UNIX" grepfilter.txt
+2:welcome to LINUX /UNIX commands
+jahnavi@DESKTOP-72D1M2J:~$ cat grepfilter.txt
+Hello! friends
+welcome to LINUX /UNIX commands
+grep filter is used to search pattern in files.
+jahnavi@DESKTOP-72D1M2J:~$ grep -v "UNIX" grepfilter.txt
+Hello! friends
+grep filter is used to search pattern in files.
+jahnavi@DESKTOP-72D1M2J:~$ grep -o "UNIX" grepfilter.txt
+UNIX
+jahnavi@DESKTOP-72D1M2J:~$ grep -e "UNIX" -e "LINUX" grepfilter.txt
+welcome to LINUX /UNIX commands
+jahnavi@DESKTOP-72D1M2J:~$ grep -e "UNIX" -e "LINUX" -e "o" grepfilter.txt
+Hello! friends
+welcome to LINUX /UNIX commands
+grep filter is used to search pattern in files.
+jahnavi@DESKTOP-72D1M2J:~$ grep ^UN grepfilter.txt
+jahnavi@DESKTOP-72D1M2J:~$ grep ^welcome grepfilter.txt
+welcome to LINUX /UNIX commands
+jahnavi@DESKTOP-72D1M2J:~$ grep s$ grepfilter.txt
+Hello! friends
+welcome to LINUX /UNIX commands
+jahnavi@DESKTOP-72D1M2J:~$ vi grepfilter.txt
+jahnavi@DESKTOP-72D1M2J:~$ cat grepfilter.txt
+Hello! friends
+welcome to LINUX /UNIX commands
+grep filter is used to search pattern in files.
+grep is command in unix
+Unix
+UNIx
+
+jahnavi@DESKTOP-72D1M2J:~$ grep -i "unix" grepfilter.txt
+welcome to LINUX /UNIX commands
+grep is command in unix
+Unix
+UNIx
+jahnavi@DESKTOP-72D1M2J:~$exit
